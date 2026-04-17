@@ -1,6 +1,6 @@
 # Avagene Therapeutics — Website
 
-Static site for **www.avagene.com**, built to be hosted on GitHub Pages.
+Static site for **www.avagene.org**, built to be hosted on GitHub Pages.
 
 The single most important page is `/fcoi.html` — the publicly accessible Financial Conflict of Interest policy required by **42 CFR 50.604(a)** before any PHS expenditure on the SBIR award.
 
@@ -33,7 +33,7 @@ The FCOI page ships in a "draft" state. Before you make it live:
 2. **Fill in `[INSERT EFFECTIVE DATE]`** in the metadata grid near the top — use the date the policy is signed.
 3. **Fill in `[INSERT DATE]` in the signature block** at the bottom — same date, and have Rupert sign the corresponding Word/PDF version of the policy for your records.
 
-Optional but recommended: set up `fcoi@avagene.com` as a real inbox (or alias to Rupert's email). The policy commits Avagene to a 5-business-day response on 50.605(a)(5) information requests.
+Optional but recommended: set up `fcoi@avagene.org` as a real inbox (or alias to Rupert's email). The policy commits Avagene to a 5-business-day response on 50.605(a)(5) information requests.
 
 ---
 
@@ -41,7 +41,7 @@ Optional but recommended: set up `fcoi@avagene.com` as a real inbox (or alias to
 
 ### 1. Create the repo
 
-Create a new public repo on GitHub. Name it whatever you like — `avagene-site`, `avagene.com`, `website` all work. (It does **not** need to be named `<username>.github.io` for a custom-domain setup.)
+Create a new public repo on GitHub. Name it whatever you like — `avagene-site`, `avagene.org`, `website` all work. (It does **not** need to be named `<username>.github.io` for a custom-domain setup.)
 
 ### 2. Upload the files
 
@@ -71,9 +71,9 @@ In the repo on GitHub:
 
 GitHub will serve the site at `https://<your-username>.github.io/<repo-name>/` within ~1 minute. Open it to confirm the styling looks right.
 
-### 4. Point `avagene.com` at GitHub
+### 4. Point `avagene.org` at GitHub
 
-In your domain registrar's DNS panel for `avagene.com`, add **five records**:
+In your domain registrar's DNS panel for `avagene.org`, add **five records**:
 
 | Type   | Name / Host | Value                                |
 | ------ | ----------- | ------------------------------------ |
@@ -85,13 +85,13 @@ In your domain registrar's DNS panel for `avagene.com`, add **five records**:
 
 The four `A` records are GitHub Pages' apex servers (current as of writing — verify at <https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site> if needed). The `CNAME` for `www` points to your GitHub user namespace (not the repo URL).
 
-The `CNAME` file already in this repo tells GitHub to expect the domain `www.avagene.com`. Don't delete it.
+The `CNAME` file already in this repo tells GitHub to expect the domain `www.avagene.org`. Don't delete it.
 
 ### 5. Set the custom domain in GitHub
 
 Back in **Settings → Pages**:
 
-- **Custom domain:** `www.avagene.com` → Save
+- **Custom domain:** `www.avagene.org` → Save
 - Wait for the green check ("DNS check successful"). This usually takes 5–30 minutes.
 - Once checked, tick **Enforce HTTPS**. The TLS certificate provisions automatically (10 minutes to an hour).
 
@@ -99,11 +99,11 @@ Back in **Settings → Pages**:
 
 Visit:
 
-- `https://www.avagene.com` → home page loads
-- `https://avagene.com` → redirects to `www.avagene.com`
-- `https://www.avagene.com/fcoi.html` → FCOI policy loads, no draft banner, dates filled in
+- `https://www.avagene.org` → home page loads
+- `https://avagene.org` → redirects to `www.avagene.org`
+- `https://www.avagene.org/fcoi.html` → FCOI policy loads, no draft banner, dates filled in
 
-That URL — `https://www.avagene.com/fcoi.html` — is what you submit via the eRA Commons IPF Module.
+That URL — `https://www.avagene.org/fcoi.html` — is what you submit via the eRA Commons IPF Module.
 
 ---
 
